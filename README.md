@@ -13,7 +13,4 @@ Run `flutter pub get`
 
 ### Run on android
 #### For debug mode
-`flutter run --flavor hr_dev`
-#### For release mode
-`flutter run --flavor hr_prod`
 
