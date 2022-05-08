@@ -1,16 +1,19 @@
-# flutter_smarthome
+# SMART HOME
 
-A new Flutter project.
+### Flutter version
+Flutter 2.10.1 • channel stable •
 
 ## Getting Started
+Run `flutter pub get`
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## How to run it
+### Run on web
+`flutter run -d web-server`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Run on android
+#### For debug mode
+`flutter run --flavor hr_dev`
+#### For release mode
+`flutter run --flavor hr_prod`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
