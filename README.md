@@ -13,4 +13,5 @@ Run `flutter pub get`
 
 ### Run on android
 #### For debug mode
+`flutter run
 
