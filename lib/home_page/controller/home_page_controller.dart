@@ -7,7 +7,8 @@ class HomePageController extends GetxController {
     'Living Room',
     'Kitchen',
     'Bathroom',
-    'Bedroom'
+    'Bedroom',
+    'Bathroom'
   ];
 
   void switchRoom({required int roomIndex}) {
