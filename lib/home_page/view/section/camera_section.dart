@@ -35,13 +35,13 @@ class CameraSection extends StatelessWidget {
                   textColor: Colors.white,
                   color: Colors.green,
                   onPressed: () async {
-                    /*DatabaseReference ref =
+                    /* DatabaseReference ref =
                         _realtimeDatabaseUtils.getKeyRandom('livingRoom');
                     await _realtimeDatabaseUtils.createData(
                         ref: ref,
                         id: _realtimeDatabaseUtils.keyOfData,
-                        title: 'led2',
-                        value: '0');*/
+                        title: 'led5',
+                        value: 0);*/
                     /*await _realtimeDatabaseUtils.updateData(
                         _realtimeDatabaseUtils.mainRefTest, 'hr', 'hrhrhr');*/
                     /*_realtimeDatabaseUtils.deleteData(

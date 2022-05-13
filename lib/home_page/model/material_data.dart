@@ -23,7 +23,7 @@ class MaterialData {
 
   final String id;
   final String title;
-  final String value;
+  final int value;
 
   Map<String, dynamic> get values {
     return {
