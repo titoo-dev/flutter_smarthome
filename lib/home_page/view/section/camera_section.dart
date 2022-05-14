@@ -1,7 +1,10 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_smarthome/service/realtime_database.dart';
 
 class CameraSection extends StatelessWidget {
-  const CameraSection({Key? key}) : super(key: key);
+  CameraSection({Key? key}) : super(key: key);
+  final RealtimeDatabaseUtils _realtimeDatabaseUtils = RealtimeDatabaseUtils();
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +34,19 @@ class CameraSection extends StatelessWidget {
                 MaterialButton(
                   textColor: Colors.white,
                   color: Colors.green,
-                  onPressed: () {},
+                  onPressed: () async {
+                    /* DatabaseReference ref =
+                        _realtimeDatabaseUtils.getKeyRandom('livingRoom');
+                    await _realtimeDatabaseUtils.createData(
+                        ref: ref,
+                        id: _realtimeDatabaseUtils.keyOfData,
+                        title: 'led5',
+                        value: 0);*/
+                    /*await _realtimeDatabaseUtils.updateData(
+                        _realtimeDatabaseUtils.mainRefTest, 'hr', 'hrhrhr');*/
+                    /*_realtimeDatabaseUtils.deleteData(
+                        _realtimeDatabaseUtils.mainRef, '3329');*/
+                  },
                   padding: const EdgeInsets.all(8.0),
                   shape: const CircleBorder(),
                   child: const Icon(

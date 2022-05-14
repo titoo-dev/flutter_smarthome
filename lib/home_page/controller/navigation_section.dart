@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_smarthome/home_page_controller.dart';
+import 'package:flutter_smarthome/home_page/controller/home_page_controller.dart';
 import 'package:get/get.dart';
 
 class NavigationSection extends GetView<HomePageController> {

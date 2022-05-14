@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488835650587",
+    "project_id": "smarthome-ec75b",
+    "storage_bucket": "smarthome-ec75b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488835650587:android:b1a2215c406e78359714be",
+        "android_client_info": {
+          "package_name": "com.example.flutter_smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488835650587-0ld3is1g0j6vo9e4375gti56h36cm3sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByNuiOr0y-jArr0FLxUUF0Xm3LKwYZjI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488835650587-0ld3is1g0j6vo9e4375gti56h36cm3sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
