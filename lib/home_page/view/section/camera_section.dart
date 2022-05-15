@@ -1,6 +1,7 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_smarthome/service/realtime_database.dart';
+
+import '../../../hr_view/value/images.dart';
+import '../../../service/realtime_database.dart';
 
 class CameraSection extends StatelessWidget {
   CameraSection({Key? key}) : super(key: key);
@@ -34,19 +35,7 @@ class CameraSection extends StatelessWidget {
                 MaterialButton(
                   textColor: Colors.white,
                   color: Colors.green,
-                  onPressed: () async {
-                    /* DatabaseReference ref =
-                        _realtimeDatabaseUtils.getKeyRandom('livingRoom');
-                    await _realtimeDatabaseUtils.createData(
-                        ref: ref,
-                        id: _realtimeDatabaseUtils.keyOfData,
-                        title: 'led5',
-                        value: 0);*/
-                    /*await _realtimeDatabaseUtils.updateData(
-                        _realtimeDatabaseUtils.mainRefTest, 'hr', 'hrhrhr');*/
-                    /*_realtimeDatabaseUtils.deleteData(
-                        _realtimeDatabaseUtils.mainRef, '3329');*/
-                  },
+                  onPressed: () {},
                   padding: const EdgeInsets.all(8.0),
                   shape: const CircleBorder(),
                   child: const Icon(
@@ -75,8 +64,7 @@ class CameraSection extends StatelessWidget {
               decoration: const BoxDecoration(
                 color: Colors.black12,
                 image: DecorationImage(
-                    image:
-                        AssetImage('assets/pexels-vecislavas-popa-1571470.jpg'),
+                    image: AssetImage(ImagePath.livingRoom1),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
