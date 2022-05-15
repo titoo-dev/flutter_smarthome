@@ -1,8 +1,5 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_smarthome/service/realtime_database.dart';
-
-import '../../../hr_view/value/images.dart';
 
 class CameraSection extends StatelessWidget {
   CameraSection({Key? key}) : super(key: key);
@@ -36,7 +33,7 @@ class CameraSection extends StatelessWidget {
                 MaterialButton(
                   textColor: Colors.white,
                   color: Colors.green,
-                  onPressed: () async {},
+                  onPressed: () {},
                   padding: const EdgeInsets.all(8.0),
                   shape: const CircleBorder(),
                   child: const Icon(
