@@ -1,5 +1,7 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+
+import '../../../hr_view/value/images.dart';
+import '../../../service/realtime_database.dart';
 
 class CameraSection extends StatelessWidget {
   CameraSection({Key? key}) : super(key: key);
