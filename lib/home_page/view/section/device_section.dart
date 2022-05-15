@@ -36,21 +36,24 @@ class DeviceSection extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     bool valueOn = _listMaterial[index].value == 1;
                     return GestureDetector(
-                      onTap: () async {
+                      onTap: () {
+                        _homePageController
+                            .goToDetailMaterial(_listMaterial[index]);
+                      },
+                      onLongPress: () async {
                         await _homePageController
-                            .updateData(_listMaterial[index]);
+                            .changeValueOfMaterial(_listMaterial[index]);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(5),
                         child: Container(
                           height: 150,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.rectangle,
                             borderRadius:
-                                BorderRadius.all(Radius.circular(15.0)),
+                                const BorderRadius.all(Radius.circular(15.0)),
                             image: DecorationImage(
-                              image: NetworkImage(
-                                  'https://firebasestorage.googleapis.com/v0/b/praise-ad755.appspot.com/o/profile%2FNDm069nFTcRWWOQjJWSuePFmgST2?alt=media&token=04f8f913-a216-4ca3-9645-09479f0e3ebd'),
+                              image: NetworkImage(_listMaterial[index].photo),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -64,7 +67,7 @@ class DeviceSection extends StatelessWidget {
                                 gradient: LinearGradient(
                                     colors: [
                                       valueOn == true
-                                          ? Colors.blue
+                                          ? Colors.orange
                                           : Colors.black,
                                       const Color(0x19000000),
                                     ],

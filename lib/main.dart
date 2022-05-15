@@ -5,6 +5,7 @@ import 'package:flutter_smarthome/home_page/controller/home_page_controller.dart
 import 'package:get/get.dart';
 
 import 'home_page/view/home_page.dart';
+import 'hr_controller/main_binding.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       home: HomePage(),
+      initialBinding: MainBindings(),
       onInit: () {
         Get.put(HomePageController());
       },

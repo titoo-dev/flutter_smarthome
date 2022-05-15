@@ -23,6 +23,10 @@ class RealtimeDatabaseUtils {
     return _client.ref().child('$mainKey/$id');
   }
 
+  DatabaseReference getValueKey(String id) {
+    return _client.ref().child('$mainKey/$id/value');
+  }
+
   List<MaterialData> readAllMaterialData(
       AsyncSnapshot<DatabaseEvent> snapshot) {
     Map<Object?, dynamic> map =
@@ -35,6 +39,8 @@ class RealtimeDatabaseUtils {
         data['id'],
         data['title'],
         data['value'],
+        data['description'],
+        data['photo'],
       ]));
     });
 
@@ -53,15 +59,25 @@ class RealtimeDatabaseUtils {
     });
   }
 
-  Future<void> createData(
-      {required DatabaseReference ref,
-      required String id,
-      required String title,
-      required int value}) async {
+  Future<void> updateValueOfData(
+      {required DatabaseReference ref, required int value}) async {
+    await ref.set(value);
+  }
+
+  Future<void> createData({
+    required DatabaseReference ref,
+    required String id,
+    required String title,
+    required int value,
+    required String photo,
+    required String description,
+  }) async {
     await ref.set({
       "id": id,
       "title": title,
       "value": value,
+      "photo": photo,
+      "description": description,
     }).then((value) => print("OK"));
   }
 

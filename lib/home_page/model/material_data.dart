@@ -3,6 +3,8 @@ class MaterialData {
     required this.id,
     required this.title,
     required this.value,
+    required this.description,
+    required this.photo,
   });
 
   factory MaterialData.fromList(List values) {
@@ -10,6 +12,8 @@ class MaterialData {
       id: values[0],
       title: values[1],
       value: values[2],
+      description: values[3],
+      photo: values[4],
     );
   }
 
@@ -18,11 +22,15 @@ class MaterialData {
       'id': id,
       'title': title,
       'value': value,
+      'description': description,
+      'photo': photo,
     };
   }
 
   final String id;
   final String title;
+  final String description;
+  final String photo;
   final int value;
 
   Map<String, dynamic> get values {
@@ -30,6 +38,8 @@ class MaterialData {
       'id': id,
       'title': title,
       'value': value,
+      'description': description,
+      'photo': photo,
     };
   }
 }
